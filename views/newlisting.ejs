@@ -1,0 +1,53 @@
+<% layout("/layout/boilerplate") %>
+<div id="newcontainer">
+
+<div class="row mt-3">
+   <div class="col-8 offset-2" >
+    <h2>Creating New Listing</h2>
+    <form method="post" action="/listing/create" class="needs-validation" novalidate enctype="multipart/form-data">
+        <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" placeholder="enter title" name="listing[title]" class="form-control" required>
+        <div class="invalid-feedback">enter valid title</div>
+        </div>
+        <br><br>
+        <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" placeholder="enter description" name="listing[description]" class="form-control" required>
+        <div class="invalid-feedback">enter valid description</div>
+        </div>
+        <br><br>
+        <div class="mb-3">
+        <label for="url" class="form-label">Url</label>
+        <input type="file" placeholder="enter image url" name="listing[url]" class="form-control">
+        <div class="invalid-feedback">enter valid url</div>
+        
+        </div>
+        <br><br>
+        <div class="row">
+        <div class="mb-3 col-md-4">
+        <label for="price" class="form-label">Price</label>
+        <input type="text" placeholder="enter price" name="listing[price]" class="form-control"required>
+        <div class="invalid-feedback">enter valid price</div>
+        </div>
+        <br><br>
+        <div class="mb-3 col-md-8">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" placeholder="enter country" name="listing[country]" class="form-control"required>
+        <div class="invalid-feedback">enter valid data</div>
+        </div>
+      </div>
+        <br><br>
+        <div class="mb-3">        
+        <label for="location" class="form-label">Location</label>
+        <input type="text" placeholder="enter location" name="listing[location]" class="form-control"required>
+        <div class="invalid-feedback">enter valid location</div>
+        <br><br>
+        </div>
+        <button class="btn btn-dark add-btn">Add</button>
+
+    </form>
+  </div>
+</div>
+</div>
+

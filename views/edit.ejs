@@ -1,0 +1,62 @@
+<% layout("/layout/boilerplate") %>
+
+<div class="row" >
+  <div class="col-8 offset-2" >
+
+      <h3>Edit</h3>
+      <form method="post" action="/listing/<%=allList._id%>?_method=PUT" class="needs-validation" novalidate enctype="multipart/form-data">
+        <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input 
+        type="text"
+         value="<%=allList.title%>" 
+         name="listing[title]" 
+         class="form-control" required/>
+        <div class="invalid-feedback">enter valid title</div>
+        </div>
+        <br><br>
+        <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" value="<%=allList.description%>" name="listing[description]" class="form-control" required />
+        <div class="invalid-feedback">enter valid description</div>
+        </div>
+        <br><br>
+        
+          <p>orignal image</p>
+          <img src="<%=newimageurl%>">
+        
+        <div class="mb-3">
+        <label for="url" class="form-label">Url</label>
+        <input type="file" value="<%=allList.image.url%>" name="listing[url]" class="form-control"/>
+        <div class="invalid-feedback">enter valid url</div>
+        </div>
+        <br><br>
+       
+        <div class="mb-3 col-md-4">
+        <label for="price" class="form-label">Price</label>
+        <input type="text" value="<%=allList.price%>" name="listing[price]" class="form-control"required/>
+        <div class="invalid-feedback">enter valid price</div>
+        </div>
+        <br><br>
+        <div class="mb-3 col-md-8">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" value="<%=allList.country%>" name="listing[country]" class="form-control"required/>
+        <div class="invalid-feedback">enter valid data</div>
+        </div>
+      
+        <br><br>
+        <div class="mb-3">        
+        <label for="location" class="form-label">Location</label>
+        <input type="text" value="<%=allList.location%>" name="listing[location]" class="form-control"required/>
+        <div class="invalid-feedback">enter valid location</div>
+       
+        </div>
+        <br><br>
+        <button class="btn btn-dark add-btn">Edit</button>
+
+    </form>
+  </div>
+</div>
+
+
+
