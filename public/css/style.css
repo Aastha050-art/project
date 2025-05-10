@@ -19,7 +19,7 @@
 }
 
 .navbar{
-    height: 5rem;
+    
     background-color: white;
 }
 .fa-compass{
@@ -63,7 +63,7 @@
 .listing-card{
     border: none !important;
     margin-bottom: 2rem;
-    background-color: #fe424d;
+    
 }
 .card-img-top{
     border-radius: 1rem !important;
